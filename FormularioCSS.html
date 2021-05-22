@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario con CSS</title>
+  <style>
+      label{
+          padding: 12px 12px 12px 0;
+          display: block;
+          color: darkgreen;
+      }
+      input{
+          width: 100%;
+          padding: 10px 10px;
+          box-sizing:border-box;
+          margin: 8px;
+          border: 10px solid rgb(184, 207, 49);
+          border-radius:30px;
+          background-color: rgb(6, 7, 7);
+          color:thistle;
+          background-image: url('imagen.jpg');
+          background-repeat: no-repeat;
+          background-position-x: 10px;
+          background-position-y: 0px;
+          transition: width 0.4s ease-in-out;
+      }
+      button{
+          background-color: chartreuse;
+          border: none;
+          color: white;
+          padding: 12px 32px;
+          text-decoration: none;
+          margin: 4px 2px;
+          box-sizing: border-box;
+          cursor: pointer;
+          margin: 10px 2px;
+
+      }
+      button:hover{
+          background-color: darkorchid;
+      }
+      input:focus {
+          background-color: blueviolet;
+          border: 4px solid blue;
+      }
+      ::placeholder{
+          color: rgb(244, 247, 248);
+      }
+      select{
+          width: 40%;
+          height: 60px 30px;
+          margin: 8px;
+          background-color: darkgreen;
+          transition: width 0.4s ease-in-out;
+      }
+      body{
+        background-color: darkcyan;
+      }
+      .container{
+          border-radius: 4px ;
+          background-color: white;
+          padding: 68px;
+          width: 700px;
+          margin: auto;
+
+      }
+  </style>
+</head>
+
+<body>
+    <h1>Formulario usando CSS</h1>
+    <div class="container">
+        <form action="" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Introduce aqui tu nombre" required />
+            <label for="nombre">Apellido</label>
+            <input type="text" name="nombre" id="apellido" placeholder="Introduce aqui tu apellido" required />
+            <label for="pais">Pais</label>
+            <select name="pais" id="pais" required>
+                <option disabled selected>Seleccione</option>
+                <optgroup label="Latinoamerica">
+                <option>Colombia</option>
+                <option>Peru</option>
+                <option>Mexico</option>
+                <option>Venezuela</option>
+            </optgroup>
+            <optgroup label="NorteAmerica">
+                <option>EEUU</option>
+                <option>Canada</option>
+                <option>Mexico</option>
+                <option>Alaska</option>
+            </optgroup>
+            </select></br>
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+</body>
+</html>
